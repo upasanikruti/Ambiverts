@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #323232;
+
+    padding: 30px 10px;
+}
+
+.card {
+    position: absolute;
+    top: 70px;
+    /* left: 35%; */
+    right: 280px;
+    max-width: 450px;
+    margin: auto;
+    color: black;
+    border-radius: 20 px;
+    z-index: 1;
+}
+
+p {
+    margin: 0px;
+}
+
+.container .h8 {
+    font-size: 30px;
+    font-weight: 800;
+    text-align: left;
+}
+
+.btn.btn-primary {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    background-image: linear-gradient(to right, #9DC200 0%, #D7FD35 50%, #CFFF00 100%);
+    border: none;
+    transition: 0.5s;
+    background-size: 200% auto;
+    position: relative;
+    top: -30px;
+
+}
+
+
+.btn.btn.btn-primary:hover {
+    background-position: right center;
+    color: black;
+    text-decoration: none;
+}
+
+
+
+.btn.btn-primary:hover .fas.fa-arrow-right {
+    transform: translate(15px);
+    transition: transform 0.2s ease-in;
+}
+
+.form-control {
+    border: 1px solid;
+    color: black;
+    background-color: #fff;
+    border: 2px solid transparent;
+    height: 60px;
+    padding-left: 20px;
+    vertical-align: middle;
+}
+
+
+.form-control:focus {
+    border: 1px solid;
+    color: #000;
+    background-color: #fff;
+    border: 2px solid #CFFF00;
+    box-shadow: none;
+}
+
+.text {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+::placeholder {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.container2{
+    background-color: white;
+    width: 400px;
+    height: 470px;
+    position: absolute;
+    top: 110px;
+    left: 410px;
+}
+
+.square{
+    background-color:#CFFF00;
+    width: 400px;
+    height: 180px;
+    /* position: relat; */
+    top: 150px;
+    left: 420px;
+}
+
+.totalpay{
+    position: relative;
+    top: 60px;
+    left: 120px;
+}
+
+.Amount{
+    position: relative;
+    top: 60px;
+    left: 150px;
+    font-weight: bold;
+    font-size: 250%;
+    color: #844E45;
+}
+
+.square2{
+    display: block;
+    /* align-items: center; */
+    /* text-align: center; */
+    width: 90%;
+    /* height: 50%; */
+    padding: 20px 60px;
+    border: 1px solid #323232;
+    margin-left: 5%;
+
+}
+
+.btn1{
+    display: block;
+    width: 100%;
+    border: 1px solid;
+    background-color: #F8F8F8;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    padding: 21px;
+}
+
+.btn_master {
+    border: 1px solid;
+    /* content: " "; */
+    /* display: inline-block; */
+    background: url("images/mastercard.jpg") no-repeat;
+    background-size: 100%;
+    height: 23px;
+    width: 35px;
+}
+
+.btn_visa {
+    border: 1px solid;
+    /* content: " "; */
+    /* display: inline-block; */
+    background: url("images/visa.jpg") no-repeat;
+    background-size: 100%;
+    height: 23px;
+    width: 35px;
+}
+.btn_paytm {
+    border: 1px solid;
+    /* content: " "; */
+    /* display: inline-block; */
+    background: url("images/paytm.png") no-repeat;
+    background-size: 100% 100%;
+    height: 23px;
+    width: 35px;
+}
+.btn_googlepay {
+    border: 1px solid;
+    /* content: " "; */
+
+    background: url("images/gpay.png") no-repeat;
+    background-size: 100% 100%;
+    height: 23px;
+    width: 35px;
+}
+
+.month{
+	height:60px;
+	width: 90px;
+	font-size:12px;
+    border: 1px solid;
+    color: black;
+    background-color: #fff;
+    border: 2px solid transparent;
+    /* height: 60px; */
+    padding-left: 20px;
+    /* vertical-align: middle; */
+    border-radius: 5%;
+}
+
+.year{
+    position: relative;
+    height:60px;
+	width: 90px;
+	font-size:12px;
+    border: 1px solid;
+    color: black;
+    background-color: #fff;
+    border: 2px solid transparent;
+    /* height: 60px; */
+    padding-left: 20px;
+    top: -60px;
+    left: 100px;
+    /* vertical-align: middle; */
+    border-radius: 5%;
+}
+
+
+
+.input_highlight{
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #9DC200;
+    position: absolute;
+    display: block;
+    bottom: 0;
+    transition: width 0.4s ease;
+}
